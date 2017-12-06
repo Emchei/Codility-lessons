@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  PermMissingElem.cpp
+c:\users\emannuel\documents\visual studio 2015\projects\permmissingelem\permmissingelem\permmissingelem.cpp(25): warning C4715: 'solution': not all control paths return a value
+  PermMissingElem.vcxproj -> c:\users\emannuel\documents\visual studio 2015\Projects\PermMissingElem\x64\Debug\PermMissingElem.exe
