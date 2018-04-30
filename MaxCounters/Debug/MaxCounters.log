@@ -1,0 +1,6 @@
+﻿  Skipping... (no relevant changes detected)
+  stdafx.cpp
+  MaxCounters.cpp
+c:\users\emannuel\documents\visual studio 2015\projects\maxcounters\maxcounters\maxcounters.cpp(90): warning C4018: '<': signed/unsigned mismatch
+c:\users\emannuel\documents\visual studio 2015\projects\maxcounters\maxcounters\maxcounters.cpp(115): warning C4018: '<': signed/unsigned mismatch
+  MaxCounters.vcxproj -> C:\Users\Emannuel\documents\visual studio 2015\Projects\MaxCounters\Debug\MaxCounters.exe
