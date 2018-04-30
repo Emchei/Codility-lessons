@@ -70,4 +70,4 @@ expected worst-case space complexity is O(N), beyond input storage (not counting
 
 /////////////////////////////////////////////////////////////////////////////
 #Results of application
-Solution score (Got 100%) :https://app.codility.com/demo/results/trainingGT39PC-WRB/
+Solution score (Got 100%) https://app.codility.com/demo/results/trainingGT39PC-WRB/
