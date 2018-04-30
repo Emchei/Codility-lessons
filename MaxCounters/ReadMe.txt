@@ -2,39 +2,70 @@
     CONSOLE APPLICATION : MaxCounters Project Overview
 ========================================================================
 
-AppWizard has created this MaxCounters application for you.
+You are given N counters, initially set to 0, and you have two possible operations on them:
 
-This file contains a summary of what you will find in each of the files that
-make up your MaxCounters application.
+	1)	increase(X) − counter X is increased by 1,
+	2)	max counter − all counters are set to the maximum value of any counter.
+A non-empty zero-indexed array A of M integers is given. This array represents consecutive operations:
 
+	1)	if A[K] = X, such that 1 ≤ X ≤ N, then operation K is increase(X),
+	2)	if A[K] = N + 1 then operation K is max counter.
+For example, given integer N = 5 and array A such that:
 
-MaxCounters.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
+A[0] = 3
+A[1] = 4
+A[2] = 4
+A[3] = 6
+A[4] = 1
+A[5] = 4
+A[6] = 4
+the values of the counters after each consecutive operation will be:
 
-MaxCounters.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
+(0, 0, 1, 0, 0)
+(0, 0, 1, 1, 0)
+(0, 0, 1, 2, 0)
+(2, 2, 2, 2, 2)
+(3, 2, 2, 2, 2)
+(3, 2, 2, 3, 2)
+(3, 2, 2, 4, 2)
+The goal is to calculate the value of every counter after all operations.
 
-MaxCounters.cpp
-    This is the main application source file.
+Assume that the following declarations are given:
 
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
+struct Results {
+	int * C;
+	int L;
+};
 
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named MaxCounters.pch and a precompiled types file named StdAfx.obj.
+Write a function:
 
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
+	struct Results solution(int N, int A[], int M);
 
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
+that, given an integer N and a non-empty zero-indexed array A consisting of M integers, returns a sequence of integers representing the values of the counters.
+
+The sequence should be returned as:
+
+a structure Results (in C), or
+a vector of integers (in C++), or
+
+For example, given:
+
+A[0] = 3
+A[1] = 4
+A[2] = 4
+A[3] = 6
+A[4] = 1
+A[5] = 4
+A[6] = 4
+the function should return [3, 2, 2, 4, 2], as explained above.
+
+Assume that:
+
+N and M are integers within the range [1..100,000];
+each element of array A is an integer within the range [1..N + 1].
+Complexity:
+
+expected worst-case time complexity is O(N+M);
+expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
 
 /////////////////////////////////////////////////////////////////////////////
