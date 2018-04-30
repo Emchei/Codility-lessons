@@ -1,5 +1,5 @@
 ========================================================================
-    CONSOLE APPLICATION : MaxCounters Project Overview
+    C APPLICATION : MaxCounters Project Overview
 ========================================================================
 
 You are given N counters, initially set to 0, and you have two possible operations on them:
@@ -69,3 +69,5 @@ expected worst-case time complexity is O(N+M);
 expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
 
 /////////////////////////////////////////////////////////////////////////////
+#Results of application
+[Training score](https://app.codility.com/demo/results/trainingGT39PC-WRB/)
