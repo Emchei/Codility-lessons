@@ -1,5 +1,5 @@
 
-    #C APPLICATION : MaxCounters Project Overview
+    C APPLICATION : MaxCounters Project Overview
 
 You are given N counters, initially set to 0, and you have two possible operations on them:
 
